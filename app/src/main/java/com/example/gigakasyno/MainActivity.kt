@@ -8,9 +8,7 @@ import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Button
-import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
@@ -26,19 +24,14 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             GigaKasynoTheme {
-                Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    GreetingScreen(
-                        name = "Android",
-                        modifier = Modifier.padding(innerPadding)
-                    )
-                }
+                GreetingScreen()
             }
         }
     }
 }
 
 @Composable
-fun GreetingScreen(name: String, modifier: Modifier = Modifier) {
+fun GreetingScreen() {
     val logo = painterResource(R.drawable.logo)
     val rouletteImage = painterResource(R.drawable.ruletka)
     Column (
@@ -58,6 +51,6 @@ fun GreetingScreen(name: String, modifier: Modifier = Modifier) {
 @Composable
 fun GreetingScreenPreview() {
     GigaKasynoTheme {
-        GreetingScreen("Android")
+        GreetingScreen()
     }
 }
