@@ -3,4 +3,12 @@
     <string name="greeting_screen_btn_text">$ Wkrocz do świata wielkich wygranych $</string>
     <string name="app_logo_description">App logo</string>
     <string name="roulette_image">obrazek ruletki</string>
+    <string name="menu_title">Wybierz aktywność</string>
+    <string name="game_slots">Jednoręki Bandyta</string>
+    <string name="game_roulette">Ruletka</string>
+    <string name="game_blackjack">Blackjack</string>
+    <string name="game_coin">Rzut monetą</string>
+    <string name="back_to_main">Powrót</string>
+    <string name="player_statistics">Statystyki gracza</string>
+    <string name="player_profile">Profil gracza</string>
 </resources>
